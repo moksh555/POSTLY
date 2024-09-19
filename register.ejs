@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSTLY</title>
+    <link rel="stylesheet" href="/styles/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0Zm2.734 11.887a1 1 0 0 1-.668.408 6.878 6.878 0 0 1-2.666 0 1 1 0 0 1-.668-.408L3.145 8l3.587-3.887a1 1 0 0 1 .668-.408 6.878 6.878 0 0 1 2.666 0 1 1 0 0 1 .668.408L12.855 8ZM5.018 8a.982.982 0 0 1 0-.116l1.758-1.907L8 7.16l1.224-1.183 1.758 1.907a.982.982 0 0 1 0 .116l-1.758 1.907L8 8.84l-1.224 1.183Z"
+            />
+          </svg>
+        </span>
+        POSTLY
+      </h1>
+      <form action="/register" method="post">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+        <div class="form-group">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+      <div class="register-section">
+        <p>Already a user!</p>
+        <a href="/">
+          <button type="button" class="register-btn">Login</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
